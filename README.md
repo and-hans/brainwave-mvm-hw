@@ -21,6 +21,12 @@ This repository contains the SystemVerilog implementation of a complete matrix-v
 * Functional correctness and integration verification are tested using the `mvm_tb.sv` testbench.
 * Running the implementation flow requires out-of-context synthesis (using the `-mode out_of_context` flag) to bypass the IO pin limitations of the FPGA on the Kria board.
 
+## EDA Playground
+* You can evaluate the engine directly in your browser without needing to set up Vivado. Visit this [EDA Playground](https://www.edaplayground.com/x/wCAd) workspace and click Run to execute the simulation.
+* UVM Verification: This interactive environment uses a UVM testbench, rather than the basic testbench found in the tb/ folder.
+* Hardware vs. Simulation: The simulated engine is functionally identical to the FPGA implementation. However, to support generic simulation, it replaces the hardware-specific Xilinx DSP48E2 primitive (3-stage pipeline) with a behavioral dsp_mult module (4-stage pipeline).
+* Source Files: All files used in this online environment are available locally in the edaplayground_src/ and uvm_tb/ directories.
+
 ### Authors
 * Andrew Hansraj
 * Leo Wang
