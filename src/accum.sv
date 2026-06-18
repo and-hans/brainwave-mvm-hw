@@ -31,6 +31,8 @@ always_ff @(posedge clk) begin
         if (ivalid) begin
             res <= (first) ? data : res+data;
             valid <= last;
+        end else begin
+            valid <= 0;
         end
     end
 end
