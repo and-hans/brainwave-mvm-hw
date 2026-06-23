@@ -39,7 +39,7 @@ The verification environment is fully encapsulated and follows a standard UVM hi
 
 ### Running the Simulation
 **Browser-Based Execution:**
-You can run this UVM testbench directly in your browser without compiling anything locally by using this [EDA Playground](https://www.edaplayground.com/x/wCAd)  link above. 
+You can run this UVM testbench directly in your browser without compiling anything locally by using this [EDA Playground](https://www.edaplayground.com/x/wCAd)  link. 
 
 **Local Execution:**
 To run the verification suite on your own machine, you can use any UVM 1.2 compliant simulator (such as Vivado XSim, VCS, Questa, or Xcelium). Ensure your simulator is configured to compile the UVM library. 
