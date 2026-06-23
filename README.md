@@ -1,4 +1,4 @@
-## ECE 327 Lab 4: Matrix-Vector Multiplication (MVM) Engine
+## Matrix-Vector Multiplication (MVM) Engine
 
 ### Overview
 This repository contains the SystemVerilog implementation of a complete matrix-vector multiplication (MVM) engine for vectors and matrices of arbitrary sizes. The hardware architecture is similar to the Microsoft BrainWave deep learning accelerator. The circuit is optimized to meet timing constraints at 350 MHz on a Xilinx Kria FPGA board.
@@ -55,7 +55,7 @@ vcs -sverilog -ntb_opts uvm-1.2 -f filelist.f
 * **Source Files:** All files used in this online environment are available locally in the `edaplayground_src/` and `uvm_tb/` directories.
 
 ## Python Verification (Cocotb)
-* In addition to SystemVerilog UVM, this project includes a complete Python-based testbench using [Cocotb](https://docs.cocotb.org/).
+* In addition to SystemVerilog UVM, this project includes a complete Python-based testbench using [Cocotb](https://www.edaplayground.com/x/f9RQ).
 * **Golden Model:** The testbench leverages `numpy` to generate randomized stimulus and compute the exact expected dot-product results natively in software.
 * **Automated Checking:** The script safely packs 8-bit slices into 64-bit words to avoid simulator delays, monitors the valid signal, and asserts the parallel hardware outputs against the software calculations.
 * **Execution:** Run locally via `make SIM=icarus` (requires Python, `cocotb`, `numpy`, and a simulator like Icarus Verilog), or run it directly in your browser using the EDA Playground.
